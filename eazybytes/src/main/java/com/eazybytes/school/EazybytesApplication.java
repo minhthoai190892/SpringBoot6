@@ -1,5 +1,6 @@
 package com.eazybytes.school;
 
+import org.apache.catalina.users.DataSourceUserDatabase;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

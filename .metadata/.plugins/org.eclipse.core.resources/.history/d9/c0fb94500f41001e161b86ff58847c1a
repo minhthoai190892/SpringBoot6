@@ -1,0 +1,5 @@
+server:
+  port: 0
+  servlet:
+    context-path: /eazyschool
+debug: true
