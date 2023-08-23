@@ -2923,3 +2923,18 @@ org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 2401
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 11:27:09.000
 !MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 11:31:10.929
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 11:33:46.448
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 11:35:11.940
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 11:41:00.281
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 11:43:10.052
+!MESSAGE Classpath changed for project: eazybytes
