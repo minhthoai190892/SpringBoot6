@@ -7,6 +7,7 @@ public class Holiday {
 	public enum Type {
 		FESTIVAL,FEDERAL
 	}
+	
 	public Holiday(String day, String reason, Type type) {
 		super();
 		this.day = day;
