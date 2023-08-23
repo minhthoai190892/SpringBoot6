@@ -9,7 +9,9 @@ public class WebConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
+		//đăng ký đường dẫn
 		registry.addViewController("/courses").setViewName("courses");
+		registry.addViewController("/about").setViewName("about");
 	}
 
 }
