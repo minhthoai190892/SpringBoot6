@@ -12,6 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
 		//đăng ký đường dẫn
 		registry.addViewController("/courses").setViewName("courses");
 		registry.addViewController("/about").setViewName("about");
+//		registry.addViewController("/contact").setViewName("contact");
 	}
 
 }
