@@ -2852,3 +2852,74 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 08:28:25.492
 !MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 11:20:01.443
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.eclipse.jface 2 0 2023-08-23 11:22:09.891
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-08-23 11:22:09.891
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.debug.ui.commands.RunToLine"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.springframework.ide.eclipse.boot.restart.commands.restart,Trigger Restart,
+		Restart Spring Boot Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.springframework.ide.eclipse.boot.restart.commands.restart"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+
+!ENTRY org.eclipse.jdt.debug 4 125 2023-08-23 11:24:36.513
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 0
+org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 2351.
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:196)
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:207)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:208)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:243)
+	at org.eclipse.jdi.internal.request.EventRequestImpl.enable(EventRequestImpl.java:281)
+	at org.eclipse.jdi.internal.request.EventRequestImpl.setEnabled(EventRequestImpl.java:322)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.internalUpdateEnabledState(JavaBreakpoint.java:834)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.updateEnabledState(JavaBreakpoint.java:819)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.configureRequest(JavaBreakpoint.java:545)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.createLineBreakpointRequest(JavaLineBreakpoint.java:352)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.newRequests(JavaLineBreakpoint.java:305)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.createRequest(JavaBreakpoint.java:517)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.handleClassPrepareEvent(JavaBreakpoint.java:382)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.handleEvent(JavaBreakpoint.java:304)
+	at org.eclipse.jdt.internal.debug.core.EventDispatcher.dispatch(EventDispatcher.java:159)
+	at org.eclipse.jdt.internal.debug.core.EventDispatcher.run(EventDispatcher.java:320)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.debug 4 125 2023-08-23 11:24:38.861
+!MESSAGE Internal error logged from JDI Debug: 
+!STACK 0
+org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 2401.
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:196)
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:207)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:208)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:243)
+	at org.eclipse.jdi.internal.request.EventRequestImpl.enable(EventRequestImpl.java:281)
+	at org.eclipse.jdi.internal.request.EventRequestImpl.setEnabled(EventRequestImpl.java:322)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.internalUpdateEnabledState(JavaBreakpoint.java:834)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.updateEnabledState(JavaBreakpoint.java:819)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.configureRequest(JavaBreakpoint.java:545)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.createLineBreakpointRequest(JavaLineBreakpoint.java:352)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.newRequests(JavaLineBreakpoint.java:305)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.createRequest(JavaBreakpoint.java:517)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.handleClassPrepareEvent(JavaBreakpoint.java:382)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaBreakpoint.handleEvent(JavaBreakpoint.java:304)
+	at org.eclipse.jdt.internal.debug.core.EventDispatcher.dispatch(EventDispatcher.java:159)
+	at org.eclipse.jdt.internal.debug.core.EventDispatcher.run(EventDispatcher.java:320)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 11:27:09.000
+!MESSAGE Classpath changed for project: eazybytes
