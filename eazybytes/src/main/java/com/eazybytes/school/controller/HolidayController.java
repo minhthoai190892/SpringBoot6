@@ -8,17 +8,25 @@ import java.util.stream.Collectors;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.eazybytes.school.model.Holiday;
 
 @Controller
 public class HolidayController {
-	@GetMapping("/holidays")
-	public String displayHoliday(Model model,@RequestParam(required = false) boolean festival,@RequestParam(required = false) boolean federal) {
+	@GetMapping("/holidays/{display}")
+	public String displayHoliday(Model model,@PathVariable String display) {
 		System.err.println("/holidays");
-		model.addAttribute("festival",festival);
-		model.addAttribute("federal",federal);
+		
+		if (null !=display && display.equals("all")) {
+			model.addAttribute("festival",true);
+			model.addAttribute("federal",true);
+		}else if (null !=display && display.equals("festival")) {
+			model.addAttribute("festival",true);
+		}else if (null !=display && display.equals("federal")) {
+			model.addAttribute("federal",true);
+		}
 		//tạo các ngày lễ
 		List<Holiday> holidays = Arrays.asList(new Holiday("Jan 1", "New Year's Day", Holiday.Type.FESTIVAL),
 				new Holiday("Oct 31", "Halloween", Holiday.Type.FESTIVAL),
