@@ -4322,3 +4322,9 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-23 16:42:00.750
 !MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 08:44:31.567
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 08:48:05.100
+!MESSAGE Classpath changed for project: eazybytes
