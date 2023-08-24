@@ -19,18 +19,27 @@ public class ProjectSecurityConfig {
 		http.authorizeHttpRequests((requests)->requests
 //												.requestMatchers("/contact").authenticated()//yêu cầu quền đăng nhập
 //												.requestMatchers("/coursess").denyAll()//ngừng cung cấp dịch vụ cho trang web
-//												
+												.requestMatchers("/dashboard").authenticated()
 												.requestMatchers("","/","/home").permitAll()
 												.requestMatchers("/contact").permitAll()
 												.requestMatchers("/holidays/**").authenticated()
 												.requestMatchers("/saveMsg").permitAll()
 												.requestMatchers("/courses").permitAll()
 												.requestMatchers("/about").permitAll()
+												.requestMatchers("/login").permitAll()
 												.requestMatchers("/assets/**").permitAll()
 //												.anyRequest().permitAll()
 														
-				)
-			.formLogin(login->login.permitAll())
+				).csrf(csrf->csrf.disable())
+			.formLogin(login->login
+								.loginPage("/login")//trang login
+								.defaultSuccessUrl("/dashboard")//khi đăng nhập thành công sẽ vào trang dashboard
+								.failureUrl("/login?error=true")//khi đăng nhập không thành công
+								.permitAll())
+			.logout(logout->logout
+								.logoutSuccessUrl("/login?logout=true")//logout thành công và chuyển hướng đến trang đăng nhập
+								.invalidateHttpSession(true)//sau khi logout sẽ vô hiệu hóa phiên làm việc này
+								.permitAll())
 			
 		;
 		return http.build();
