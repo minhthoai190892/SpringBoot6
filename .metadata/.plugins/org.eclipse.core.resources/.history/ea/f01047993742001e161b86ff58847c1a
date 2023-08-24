@@ -1,0 +1,10 @@
+server:
+  port: 51856
+  servlet:
+    context-path: /eazyschool
+#debug: true
+# thymeleaf
+## cho phép trang web lấy thông mới mà không cần khởi động lại ứng dụng
+spring:
+  thymeleaf:
+    cache: false

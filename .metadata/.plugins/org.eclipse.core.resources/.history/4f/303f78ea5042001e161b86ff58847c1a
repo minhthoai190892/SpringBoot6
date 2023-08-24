@@ -1,0 +1,5 @@
+package com.eazybytes.school.controller;
+
+public class LoginController {
+
+}

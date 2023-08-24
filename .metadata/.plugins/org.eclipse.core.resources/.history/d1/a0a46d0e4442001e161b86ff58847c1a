@@ -1,0 +1,5 @@
+package com.eazybytes.school.security;
+
+public class WebSecurityConfig {
+
+}
