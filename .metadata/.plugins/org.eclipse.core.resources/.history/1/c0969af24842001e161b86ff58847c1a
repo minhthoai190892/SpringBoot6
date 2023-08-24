@@ -13,11 +13,11 @@ public class ProjectSecurityConfig {
 //												.requestMatchers("/contact").authenticated()//yêu cầu quền đăng nhập
 //												.requestMatchers("/coursess").denyAll()//ngừng cung cấp dịch vụ cho trang web
 //												
-												.requestMatchers("","/","/home").permitAll()
+												.requestMatchers("/home").permitAll()
 												.requestMatchers("/contact").permitAll()
-												.requestMatchers("/holidays/**").authenticated()
+												.requestMatchers("/holidays").permitAll()
 												.requestMatchers("/saveMsg").permitAll()
-												.requestMatchers("/courses").permitAll()
+												.requestMatchers("/coursess").permitAll()
 												.requestMatchers("/about").permitAll()
 												.requestMatchers("/assets/**").permitAll()
 //												.anyRequest().permitAll()

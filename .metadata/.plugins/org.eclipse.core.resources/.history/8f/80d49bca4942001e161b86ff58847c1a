@@ -15,7 +15,7 @@ public class ProjectSecurityConfig {
 //												
 												.requestMatchers("","/","/home").permitAll()
 												.requestMatchers("/contact").permitAll()
-												.requestMatchers("/holidays/**").authenticated()
+												.requestMatchers("/holidays").permitAll()
 												.requestMatchers("/saveMsg").permitAll()
 												.requestMatchers("/courses").permitAll()
 												.requestMatchers("/about").permitAll()

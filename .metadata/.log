@@ -5193,3 +5193,78 @@ Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request textDocumen
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:22:55.902
 !MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:28:40.722
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:29:26.733
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-24 13:36:01.741
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:36:46.874
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:36:47.034
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:36:55.179
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:38:26.045
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:38:32.076
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-24 13:39:16.043
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:39:17.275
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:40:35.334
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:40:39.037
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:41:01.508
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:43:03.447
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-24 13:45:20.280
+!MESSAGE Classpath changed for project: eazybytes
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-08-24 13:45:20.511
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
