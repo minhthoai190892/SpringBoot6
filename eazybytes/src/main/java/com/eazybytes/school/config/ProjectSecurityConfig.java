@@ -27,10 +27,11 @@ public class ProjectSecurityConfig {
 												.requestMatchers("/courses").permitAll()
 												.requestMatchers("/about").permitAll()
 												.requestMatchers("/login").permitAll()
+												.requestMatchers("/logout").permitAll()
 												.requestMatchers("/assets/**").permitAll()
 //												.anyRequest().permitAll()
 														
-				).csrf(csrf->csrf.disable())
+				).csrf(csrf->csrf.ignoringRequestMatchers("/saveMsg"))
 			.formLogin(login->login
 								.loginPage("/login")//trang login
 								.defaultSuccessUrl("/dashboard")//khi đăng nhập thành công sẽ vào trang dashboard
